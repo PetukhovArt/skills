@@ -1,0 +1,14 @@
+{
+  "name": "petukhovart-skills",
+  "version": "0.0.0",
+  "description": "Artem Petukhov's agent skills: small, composable, harness-agnostic.",
+  "author": {
+    "name": "Artem Petukhov",
+    "url": "https://github.com/PetukhovArt"
+  },
+  "homepage": "https://github.com/PetukhovArt/skills",
+  "repository": "https://github.com/PetukhovArt/skills",
+  "license": "MIT",
+  "keywords": ["skills", "engineering", "productivity", "agents"],
+  "skills": ["./skills/productivity/raise-the-bar"]
+}

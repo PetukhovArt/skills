@@ -1,0 +1,5 @@
+interface:
+  display_name: "Raise The Bar"
+  short_description: "Rewrite a task to a top professional's bar"
+policy:
+  allow_implicit_invocation: false

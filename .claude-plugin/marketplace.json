@@ -1,0 +1,17 @@
+{
+  "name": "petukhovart-skills",
+  "owner": {
+    "name": "Artem Petukhov",
+    "url": "https://github.com/PetukhovArt"
+  },
+  "description": "Artem Petukhov's agent skills, as an installable plugin.",
+  "plugins": [
+    {
+      "name": "petukhovart-skills",
+      "source": "./",
+      "description": "Artem Petukhov's agent skills: small, composable, harness-agnostic.",
+      "category": "productivity",
+      "keywords": ["skills", "engineering", "productivity"]
+    }
+  ]
+}
