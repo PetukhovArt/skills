@@ -4,7 +4,7 @@ import { dirname, join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PROMOTED = ["measure", "cut", "prove", "teach"];
+const PROMOTED = ["shape", "build", "prove", "teach"];
 const BUCKETS = [...PROMOTED, "in-progress", "deprecated"];
 const SKIP_DIRS = new Set([".git", "node_modules"]);
 const PROSE = /\.(md|ya?ml|json|mjs)$/;

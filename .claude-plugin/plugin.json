@@ -10,5 +10,5 @@
   "repository": "https://github.com/PetukhovArt/skills",
   "license": "MIT",
   "keywords": ["skills", "agents", "workflow"],
-  "skills": ["./skills/measure/raise-the-bar"]
+  "skills": ["./skills/shape/raise-the-bar"]
 }
