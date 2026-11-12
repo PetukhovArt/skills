@@ -41,13 +41,20 @@ To update, run `npx skills@latest update`, and re-run `add` to pick up new skill
 
 ## Skills
 
-Skills live in buckets under [`skills/`](./skills): [`engineering/`](./skills/engineering) for daily code work, [`productivity/`](./skills/productivity) for workflow that is not tied to code. User-invoked skills run only when you type their name; model-invoked ones the agent may also reach for on its own.
+Skills live in buckets under [`skills/`](./skills), named for the step of the work where you reach for them: measure twice, cut once, then prove it and teach it. A bucket appears with its first skill.
 
-### Productivity
+- `measure/`: size the task before touching it
+- `cut/`: do the work
+- `prove/`: show that it works
+- `teach/`: pass the knowledge on
+
+User-invoked skills run only when you type their name; model-invoked ones the agent may also reach for on its own.
+
+### Measure
 
 #### User-invoked
 
-- [`raise-the-bar`](./skills/productivity/raise-the-bar/SKILL.md): before any work starts, rewrites a task to the bar a top professional would set: the outcome behind it, a specific hard target, the raw material, the field's instruments and an outside judge.
+- [`raise-the-bar`](./skills/measure/raise-the-bar/SKILL.md): before any work starts, rewrites a task to the bar a top professional would set: the outcome behind it, a specific hard target, the raw material, the field's instruments and an outside judge.
 
 ## License
 

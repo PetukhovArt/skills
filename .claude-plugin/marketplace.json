@@ -10,8 +10,8 @@
       "name": "petukhovart-skills",
       "source": "./",
       "description": "Artem Petukhov's agent skills: small, composable, harness-agnostic.",
-      "category": "productivity",
-      "keywords": ["skills", "engineering", "productivity"]
+      "category": "development",
+      "keywords": ["skills", "agents", "workflow"]
     }
   ]
 }

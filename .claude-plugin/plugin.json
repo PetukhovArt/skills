@@ -9,6 +9,6 @@
   "homepage": "https://github.com/PetukhovArt/skills",
   "repository": "https://github.com/PetukhovArt/skills",
   "license": "MIT",
-  "keywords": ["skills", "engineering", "productivity", "agents"],
-  "skills": ["./skills/productivity/raise-the-bar"]
+  "keywords": ["skills", "agents", "workflow"],
+  "skills": ["./skills/measure/raise-the-bar"]
 }

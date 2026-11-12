@@ -4,14 +4,18 @@ Everything in this repo is in English.
 
 ## Layout
 
-Skills live in bucket folders under `skills/`:
+Skills live in bucket folders under `skills/`, named for the step of the work where the user reaches for them ("measure twice, cut once"):
 
-- `engineering/`: daily code work
-- `productivity/`: daily workflow that is not tied to code
+- `measure/`: size the task before touching it
+- `cut/`: do the work
+- `prove/`: show that it works
+- `teach/`: pass the knowledge on
 - `in-progress/`: beta, public on purpose, not shipped in the plugin
 - `deprecated/`: no longer used, not shipped
 
-`engineering/` and `productivity/` are the **promoted** buckets. Every promoted skill has an entry in `.claude-plugin/plugin.json`'s `skills` array and a link to its `SKILL.md` in the top-level `README.md`; skills in the other buckets appear in neither. Each bucket's `README.md` links every skill in it with a one-line description. Promoted bucket READMEs and the top-level README group entries into **User-invoked** and **Model-invoked**.
+A skill that spans two steps goes where its first step is. A bucket folder is created with its first skill and removed with its last: no empty buckets.
+
+`measure/`, `cut/`, `prove/` and `teach/` are the **promoted** buckets. Every promoted skill has an entry in `.claude-plugin/plugin.json`'s `skills` array and a link to its `SKILL.md` in the top-level `README.md`; skills in the other buckets appear in neither. Each bucket's `README.md` links every skill in it with a one-line description. Promoted bucket READMEs and the top-level README group entries into **User-invoked** and **Model-invoked**, leaving out a group that has no skills.
 
 `npm run check` enforces these rules in CI. Run it, and `claude plugin validate . --strict` after touching either manifest, before you push.
 

@@ -4,7 +4,7 @@ import { dirname, join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PROMOTED = ["engineering", "productivity"];
+const PROMOTED = ["measure", "cut", "prove", "teach"];
 const BUCKETS = [...PROMOTED, "in-progress", "deprecated"];
 const SKIP_DIRS = new Set([".git", "node_modules"]);
 const PROSE = /\.(md|ya?ml|json|mjs)$/;
@@ -68,6 +68,13 @@ for (const file of files.filter((f) => f.endsWith(`${sep}SKILL.md`))) {
     }
   }
   skills.push({ bucket, name, path: `./skills/${bucket}/${name}` });
+}
+
+for (const bucket of readdirSync(join(repo, "skills"))) {
+  const dir = join(repo, "skills", bucket);
+  if (!statSync(dir).isDirectory()) continue;
+  if (!BUCKETS.includes(bucket)) fail(dir, `unknown bucket, expected one of ${BUCKETS.join(", ")}`);
+  else if (!skills.some((s) => s.bucket === bucket)) fail(dir, "empty bucket: remove it until its first skill");
 }
 
 const pluginFile = join(repo, ".claude-plugin", "plugin.json");
